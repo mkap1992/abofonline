@@ -27,6 +27,7 @@ public void Registration() throws InterruptedException
 	for(int i=0;i<count;i++) {
 		
 		element.get(i).click();
+		Thread.sleep(2000);
 	}
 	driver.findElement(By.id("checkbox1")).click();
 	driver.findElement(By.id("firstpassword")).sendKeys("123456789");
